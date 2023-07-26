@@ -3,10 +3,11 @@ nav.NavbarWrapper {
   justify-content: space-between;
   gap: 16px;
 
-  padding: 16px 24px;
-//    border-bottom: 1px solid #255fa1;
+  padding: 12px 24px;
+  border-bottom: 1px solid #255fa1;
 
-  background: linear-gradient(#edededee, #ededed00);
+//   background: linear-gradient(#edededee, #ededed00);
+  background-color: #ededed;
 
   text-transform: uppercase;
   font-size: 14px;

@@ -19,6 +19,12 @@ export default function Projects() {
         description="An app to allow icon pack customers to vote on which icons they'd like to see next."
         url="#"
       />
+      <ProjectCard
+        secondary
+        title="Icon Packs"
+        description="Over one thousand icons created over the course of several years, for use in game development"
+        url="#"
+      />
     </ProjectsWrapper>
   );
 }

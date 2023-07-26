@@ -12,13 +12,10 @@ export default function Navbar() {
           <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#">Resume</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
+          <a href="#links">Links</a>
         </li>
       </Links>
     </NavbarWrapper>

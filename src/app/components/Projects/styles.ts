@@ -6,6 +6,3 @@ export const ProjectsWrapper = styled("section", {
   css: css.ProjectsWrapper,
 });
 
-export const ProjectCard = styled("article", {
-  css: css.ProjectCard,
-});

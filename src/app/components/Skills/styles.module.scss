@@ -1,0 +1,53 @@
+section.SkillsWrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 100px 0;
+
+  max-width: 1280px;
+  margin: auto;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+}
+
+div.Info {
+  flex: 1;
+  padding: 48px;
+
+  h2 {
+    font-family: var(--editorial-italic);
+    font-size: clamp(48px, 12vw, 96px);
+    font-weight: 300;
+  }
+}
+
+ul.SkillsList {
+  flex: 1;
+  padding: 48px;
+
+  list-style-type: none;
+  border-top: 1px solid #255fa1;
+
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 95%;
+
+  @media (min-width: 576px) {
+    border-left: 1px solid #255fa1;
+    border-top: none;
+    padding: 0 48px;
+  }
+}
+
+li.Header {
+  font-family: var(--editorial-italic);
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: initial;
+  margin: 48px 0 24px;
+}

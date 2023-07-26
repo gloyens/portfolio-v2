@@ -18,10 +18,6 @@ a.ProjectCardWrapper {
 
   transition: 0.2s;
 
-  &:hover {
-    box-shadow: 0 25px 50px #aaa;
-  }
-
   h2 {
     font-family: var(--editorial-italic);
     font-size: clamp(48px, 12vw, 96px);
@@ -34,4 +30,17 @@ a.ProjectCardWrapper {
     font-size: 14px;
     font-weight: 600;
   }
+
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+a.CardSecondary {
+  background-color: white;
+  color: #255fa1;
+}
+
+a.Visible {
+  opacity: 1;
+  transform: translateY(-40px);
 }

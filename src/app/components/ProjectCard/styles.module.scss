@@ -1,0 +1,37 @@
+a.ProjectCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;
+  max-width: 640px;
+  max-height: 480px;
+  aspect-ratio: 4/3;
+
+  border-radius: 10px;
+
+  padding: 40px;
+
+  background-color: #333;
+  color: #ededed;
+  text-decoration: none;
+
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 25px 50px #aaa;
+  }
+
+  h2 {
+    font-family: var(--editorial-italic);
+    font-size: clamp(48px, 12vw, 96px);
+    font-weight: 300;
+  }
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

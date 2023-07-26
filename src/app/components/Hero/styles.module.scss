@@ -1,0 +1,21 @@
+section.HeroWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  gap: 64px;
+
+  margin-top: 64px;
+
+  h1 {
+    font-family: var(--editorial-italic);
+    font-size: 12vw;
+    font-weight: 300;
+  }
+
+  p {
+    max-width: 360px;
+    text-align: center;
+  }
+}

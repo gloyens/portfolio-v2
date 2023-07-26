@@ -1,0 +1,21 @@
+a.ButtonWrapper {
+  color: #255fa1;
+  background-color: none;
+
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: 1px solid #255fa1;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  transition: 0.2s;
+}
+
+a.ButtonWrapper:hover {
+  color: white;
+  background-color: #255fa1;
+}

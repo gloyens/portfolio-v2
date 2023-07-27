@@ -20,21 +20,16 @@ export default function Projects({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Function to handle the intersection changes
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // When the card is in the viewport, set isVisible to true
           setIsVisible(true);
-          // } else {
-          //   // When the card is not in the viewport, set isVisible to false
-          //   setIsVisible(false);
         }
       });
     };
 
     const options = {
-      threshold: 0.5,
+      threshold: 0.3,
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
@@ -43,7 +38,6 @@ export default function Projects({
       observer.observe(cardRef.current);
     }
 
-    // Clean up the observer when the component is unmounted
     return () => {
       if (cardRef.current) {
         observer.unobserve(cardRef.current);

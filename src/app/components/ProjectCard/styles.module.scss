@@ -8,7 +8,7 @@ a.ProjectCardWrapper {
   max-height: 480px;
   aspect-ratio: 4/3;
 
-  border-radius: 10px;
+  border-radius: 5px;
 
   padding: 40px;
 
@@ -42,5 +42,5 @@ a.CardSecondary {
 
 a.Visible {
   opacity: 1;
-  transform: translateY(-40px);
+  transform: translateY(-64px);
 }

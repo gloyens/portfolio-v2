@@ -6,16 +6,16 @@ export default function Footer() {
       <FooterContainer>
         <Column>
           <h3>Contact</h3>
-          <a href="#" target="_blank">
+          <a href="https://linkedin.com/in/gloyens" target="_blank">
             LinkedIn
           </a>
-          <a href="#" target="_blank">
+          <a href="mailto:georgegloyens@gmail.com" target="_blank">
             Email
           </a>
         </Column>
         <Column>
           <h3>More</h3>
-          <a href="#" target="_blank">
+          <a href="https://github.com/gloyens" target="_blank">
             Github
           </a>
           <a href="#" target="_blank">

@@ -6,12 +6,15 @@ section.HeroWrapper {
 
   gap: 64px;
 
-  margin: 100px 0;
+  margin: 100px 0 50px;
 
   h1 {
     font-family: var(--editorial-italic);
-    font-size: 14vw;
+    font-size: clamp(80px, 14vw, 160px);
     font-weight: 300;
+    line-height: 90%;
+
+    text-align: center;
   }
 
   p {

@@ -21,7 +21,6 @@ export default function Button({ text, url, external }: Props) {
 
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       setIsVisible(!entries[0].isIntersecting);
-      console.log(isVisible);
     };
 
     // Set up the Intersection Observer

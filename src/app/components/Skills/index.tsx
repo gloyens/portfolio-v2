@@ -24,9 +24,11 @@ export default function Skills() {
         <li>Vercel KV</li>
         <li>Python</li>
         <li>Django</li>
-        <Header>Other</Header>
         <li>Google Cloud Platform</li>
+        <Header>Other</Header>
         <li>Google Analytics</li>
+        <li>Stable Diffusion</li>
+        <li>ChatGPT</li>
         <li>Git</li>
         <li>Jira</li>
         <li>Adobe Illustrator</li>

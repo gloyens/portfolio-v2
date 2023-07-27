@@ -1,10 +1,9 @@
 a.ButtonWrapper {
-  color: #255fa1;
-  background-color: none;
+  color: #ededed;
+  background-color: #255fa1;
 
   padding: 12px 24px;
   border-radius: 24px;
-  border: 1px solid #255fa1;
 
   text-decoration: none;
   font-size: 14px;
@@ -16,6 +15,36 @@ a.ButtonWrapper {
 }
 
 a.ButtonWrapper:hover {
-  color: white;
+  background-color: #144c8b;
+}
+
+a.MiniButtonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #255fa1;
+  color: #ededed;
+  border: 2px solid #ededed22;
+
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  z-index: 1;
+
+  opacity: 1;
+  
+  transition: 0.5s;
+}
+
+a.MiniButtonWrapper:hover {
+  background-color: #144c8b;
+}
+
+a.MiniButtonHidden {
+  opacity: 0;
 }

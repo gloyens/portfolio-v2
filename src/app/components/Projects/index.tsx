@@ -1,9 +1,37 @@
+"use client";
+
 import ProjectCard from "@/app/components/ProjectCard";
 import { ProjectsWrapper } from "./styles";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
+  const WrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (WrapperRef.current) {
+      gsap.to(WrapperRef.current, {
+        xPercent: -100,
+        x: () => innerWidth,
+        ease: "none",
+        scrollTrigger: {
+          trigger: WrapperRef.current,
+          start: "top top",
+          end: () => 4000, // scroll speed
+          scrub: true,
+          pin: true,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+        },
+      });
+    }
+  }, []);
+
   return (
-    <ProjectsWrapper id="work">
+    <ProjectsWrapper id="work" ref={WrapperRef}>
       <ProjectCard
         title="Get Into Gizz"
         description="A website to explore genreconfused Australian rock band, King Gizzard and the Lizard Wizard."

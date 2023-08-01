@@ -4,6 +4,7 @@ div.OverlayContainer {
   top: -100px;
   z-index: 2;
   overflow: hidden;
+  max-width: 100vw;
   pointer-events: none;
 }
   

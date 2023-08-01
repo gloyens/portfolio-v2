@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ProjectCardWrapper } from "./styles";
+import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { ProjectCardWrapper, TagList, Links, Link, Text, Icon } from "./styles";
 
 export interface Props {
   title: string;
   description: string;
   url: string;
+  githubUrl?: string;
+  tags?: string[];
   secondary?: boolean;
 }
 
@@ -14,6 +17,8 @@ export default function Projects({
   title,
   description,
   url,
+  githubUrl,
+  tags,
   secondary,
 }: Props) {
   const cardRef = useRef<HTMLAnchorElement>(null);
@@ -52,9 +57,39 @@ export default function Projects({
       href={url}
       ref={cardRef}
       visible={isVisible}
+      target="_blank"
     >
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <div>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        {tags && (
+          <TagList>
+            {tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
+            ))}
+          </TagList>
+        )}
+      </div>
+      <Links>
+        <li>
+          <Link href={url} target="_blank">
+            <Text>Live Site</Text>
+            <Icon>
+              <FaArrowUpRightFromSquare />
+            </Icon>
+          </Link>
+        </li>
+        {githubUrl && (
+          <li>
+            <Link href={githubUrl} target="_blank">
+              <Text>Github</Text>
+              <Icon>
+                <FaGithub />
+              </Icon>
+            </Link>
+          </li>
+        )}
+      </Links>
     </ProjectCardWrapper>
   );
 }

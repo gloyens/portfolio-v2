@@ -13,3 +13,23 @@ export const ProjectCardWrapper = styled("a", {
     },
   },
 });
+
+export const TagList = styled("ul", {
+  css: css.TagList,
+});
+
+export const Links = styled("ul", {
+  css: css.Links,
+});
+
+export const Link = styled("a", {
+  css: css.Link,
+});
+
+export const Text = styled("span", {
+  css: css.Text,
+});
+
+export const Icon = styled("span", {
+  css: css.Icon,
+});

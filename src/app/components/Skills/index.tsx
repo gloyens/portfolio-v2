@@ -21,7 +21,7 @@ export default function Skills() {
         <Header>Backend</Header>
         <li>Docker</li>
         <li>CMS (Wagtail, Directus, Contentful)</li>
-        <li>Vercel KV</li>
+        <li>Redis</li>
         <li>Python</li>
         <li>Django</li>
         <li>Google Cloud Platform</li>

@@ -20,7 +20,7 @@ export default function Projects() {
         scrollTrigger: {
           trigger: WrapperRef.current,
           start: "top top",
-          end: () => 4000, // scroll speed
+          end: () => 3000, // scroll speed
           scrub: true,
           pin: true,
           invalidateOnRefresh: true,
@@ -34,23 +34,30 @@ export default function Projects() {
       <ProjectCard
         title="Get Into Gizz"
         description="A website to explore genreconfused Australian rock band, King Gizzard and the Lizard Wizard."
-        url="/work/get-into-gizz"
+        url="https://www.get-into-gizz.com"
+        tags={["Next.js"]}
+        githubUrl="https://github.com/gloyens/gizz-next-remake"
       />
       <ProjectCard
         title="MovieBot"
         description="An AI-powered movie recommendation app."
-        url="/work/moviebot"
+        url="https://www.moviebot.app"
+        tags={["ChatGPT", "Next.js"]}
+        githubUrl="https://github.com/gloyens/movie-recs"
       />
       <ProjectCard
         title="Icon Voter"
         description="An app to allow icon pack customers to vote on which icons they'd like to see next."
-        url="/work/icon-voter"
+        url="https://next-crud-gloyens.vercel.app"
+        tags={["Vercel KV", "Next.js"]}
+        githubUrl="https://github.com/gloyens/next-crud"
       />
       <ProjectCard
         secondary
         title="Icon Packs"
         description="Over one thousand icons created over the course of several years, for use in game development"
-        url="/work/icon-packs"
+        url="https://rhosgfx.itch.io"
+        tags={["Adobe Illustrator"]}
       />
     </ProjectsWrapper>
   );

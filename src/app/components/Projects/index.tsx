@@ -24,7 +24,6 @@ export default function Projects() {
           scrub: true,
           pin: true,
           invalidateOnRefresh: true,
-          anticipatePin: 1,
         },
       });
     }

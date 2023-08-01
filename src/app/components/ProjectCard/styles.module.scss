@@ -1,27 +1,26 @@
 a.ProjectCardWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 
   width: 100%;
-  max-width: 640px;
-  max-height: 480px;
-  aspect-ratio: 4/3;
-
-  border-radius: 5px;
+  height: 480px;
+  width: 360px;
+  aspect-ratio: 3/4;
 
   padding: 40px;
 
-  background-color: #333;
-  color: #ededed;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+
   text-decoration: none;
 
   transition: 0.2s;
 
   h2 {
     font-family: var(--editorial-italic);
-    font-size: clamp(48px, 12vw, 96px);
+    font-size: 48px;
     font-weight: 300;
+    padding: 12px 0;
   }
 
   p {
@@ -32,12 +31,20 @@ a.ProjectCardWrapper {
   }
 
   opacity: 0;
-  transition: opacity 1s, transform 1s;
+
+  transition: 0.5s;
+
+  &:hover {
+    color: var(--color-black);
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-black);
+    transition: 0.5s;
+  }
 }
 
 a.CardSecondary {
   background-color: white;
-  color: #255fa1;
+  color: var(--color-primary);
 }
 
 a.Visible {

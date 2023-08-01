@@ -4,9 +4,13 @@ section.HeroWrapper {
   align-items: center;
   position: relative;
 
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+
   gap: 64px;
 
-  margin: 100px 0 50px;
+  padding: 150px 0 100px;
+  margin-top: -50px;
 
   h1 {
     font-family: var(--editorial-italic);

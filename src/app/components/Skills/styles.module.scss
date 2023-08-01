@@ -3,7 +3,7 @@ section.SkillsWrapper {
   flex-direction: column;
 
   gap: 20px;
-  padding: 0 0 100px;
+  padding: 100px 0;
 
   max-width: 1280px;
   margin: auto;
@@ -29,7 +29,7 @@ ul.SkillsList {
   padding: 48px;
 
   list-style-type: none;
-  border-top: 1px solid #255fa1;
+  border-top: 1px solid var(--color-primary);
 
   text-transform: uppercase;
   font-size: 20px;
@@ -38,7 +38,7 @@ ul.SkillsList {
   line-height: 95%;
 
   @media (min-width: 576px) {
-    border-left: 1px solid #255fa1;
+    border-left: 1px solid var(--color-primary);
     border-top: none;
     padding: 0 48px;
   }

@@ -48,13 +48,15 @@ div.Column {
     text-transform: initial;
 
     color: var(--color-secondary);
-    text-decoration: none;
+    text-decoration: underline solid transparent;
+    text-underline-offset: 0.5rem;
 
     width: fit-content;
 
+    transition: 0.3s;
+
     &:hover {
-      text-decoration: underline;
-      text-underline-offset: 0.5rem;
+      text-decoration: underline solid currentColor;
     }
   }
 

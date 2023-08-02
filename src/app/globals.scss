@@ -13,7 +13,19 @@ body {
 
   background-color: var(--color-secondary);
   color: var(--color-primary);
+  
+  // For custom cursor behaviour
+  cursor: none;
 
   font-family: var(--manrope), Geneva, Verdana, sans-serif;
   overflow-x: hidden;
+}
+
+// For custom cursor behaviour
+a {
+  cursor: none;
+
+  svg, span {
+    pointer-events: none;
+  }
 }

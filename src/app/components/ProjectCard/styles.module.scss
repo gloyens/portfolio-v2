@@ -1,4 +1,4 @@
-a.ProjectCardWrapper {
+div.ProjectCardWrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,12 +53,12 @@ a.ProjectCardWrapper {
   }
 }
 
-a.CardSecondary {
+div.CardSecondary {
   background-color: white;
   color: var(--color-primary);
 }
 
-a.Visible {
+div.Visible {
   opacity: 1;
   transform: translateY(-64px);
 }

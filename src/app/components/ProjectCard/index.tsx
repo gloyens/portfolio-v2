@@ -21,7 +21,7 @@ export default function Projects({
   tags,
   secondary,
 }: Props) {
-  const cardRef = useRef<HTMLAnchorElement>(null);
+  const cardRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -54,10 +54,8 @@ export default function Projects({
     <ProjectCardWrapper
       secondary={secondary}
       id="projects"
-      href={url}
       ref={cardRef}
       visible={isVisible}
-      target="_blank"
     >
       <div>
         <h2>{title}</h2>

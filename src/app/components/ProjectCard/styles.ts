@@ -2,7 +2,7 @@ import { styled } from "@phntms/css-components";
 
 import css from "./styles.module.scss";
 
-export const ProjectCardWrapper = styled("a", {
+export const ProjectCardWrapper = styled("div", {
   css: css.ProjectCardWrapper,
   variants: {
     secondary: {

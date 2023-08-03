@@ -14,8 +14,9 @@ export default function Cursor() {
 
     document.addEventListener("mousemove", updateCursorPosition);
 
-    const handleLinkHover = (event: { target: { tagName: string } }) => {
-      setIsHoveringLink(event.target.tagName === "A");
+    const handleLinkHover = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      setIsHoveringLink(target.tagName === "A");
     };
 
     document.addEventListener("mouseover", handleLinkHover);

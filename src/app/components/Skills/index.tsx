@@ -6,8 +6,7 @@ export default function Skills() {
       <Info>
         <h2>Skills</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem debitis
-          asperiores officiis maxime provident.
+          Here are some tools I&apos;ve been using recently. While I&apos;m most comfortable with these right now, my day-to-day stack is pretty changeable - so it&apos;s not an exhaustive list.
         </p>
       </Info>
       <SkillsList>
@@ -29,7 +28,7 @@ export default function Skills() {
         <li>Google Analytics</li>
         <li>Stable Diffusion</li>
         <li>ChatGPT</li>
-        <li>Git</li>
+        <li>Git (Github & Gerrit)</li>
         <li>Jira</li>
         <li>Adobe Illustrator</li>
       </SkillsList>

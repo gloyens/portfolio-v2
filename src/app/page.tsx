@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <Cursor />
       <Overlay />
+      <Overlay /> {/* duplicated for opacity */}
       <Navbar />
       <Hero />
       <Projects />

@@ -18,7 +18,11 @@ export default function Footer() {
           <a href="https://github.com/gloyens" target="_blank">
             Github
           </a>
-          <a href="#" target="_blank">
+          <a 
+            href="https://linkedin.com/in/gloyens"
+            target="_blank"
+            style={{opacity: 0.5, textDecoration: "none"}}
+          >
             Resume
           </a>
         </Column>

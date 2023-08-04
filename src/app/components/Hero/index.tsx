@@ -6,8 +6,7 @@ export default function Hero() {
     <HeroWrapper>
       <h1>George Gloyens</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, illo
-        commodi! Iste, nam eveniet odit voluptas labore illo asperiores.
+        Combining design and code to create beautiful experiences from the ground up. Always learning something new.
       </p>
       <Button
         text="Contact me on LinkedIn"

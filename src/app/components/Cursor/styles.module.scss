@@ -10,9 +10,10 @@ div.CursorWrapper {
   padding: 12px;
   border-radius: 50%;
   background-color: white;
+
   mix-blend-mode: difference;
 
-  transition: padding 0.3s;
+  transition: padding 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   @media (pointer: coarse) {
     opacity: 0;

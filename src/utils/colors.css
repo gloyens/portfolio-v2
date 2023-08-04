@@ -1,11 +1,7 @@
 * {
-  --color-primary: #dd444c;
-  --color-primary-dark: #c33743;
-  --color-secondary: #ffe5e1;
-  --color-tertiary: #6bffab;
-  --color-black: #444;
-  /* --color-primary: #255fa1;
-  --color-primary-dark: #144c8b;
-  --color-secondary: #ededed;
-  --color-tertiary: #ffd500; */
+  --color-primary: #255fa1;
+  --color-primary-dark: #0c4281;
+  --color-secondary: #f1ffff;
+  --color-tertiary: #49ffa7;
+  --color-black: #333;
 }

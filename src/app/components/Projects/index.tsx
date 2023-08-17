@@ -20,7 +20,7 @@ export default function Projects() {
         scrollTrigger: {
           trigger: WrapperRef.current,
           start: "top top",
-          end: () => 3000, // scroll speed
+          end: () => 2700, // scroll speed, lower is faster
           scrub: true,
           pin: true,
           invalidateOnRefresh: true,

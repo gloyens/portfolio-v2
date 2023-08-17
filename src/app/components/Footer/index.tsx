@@ -19,9 +19,9 @@ export default function Footer() {
             Github
           </a>
           <a 
-            href="https://linkedin.com/in/gloyens"
+            href="/george-gloyens-cv.pdf"
             target="_blank"
-            style={{opacity: 0.5, textDecoration: "none"}}
+            // style={{opacity: 0.5, textDecoration: "none"}}
           >
             Resume
           </a>
